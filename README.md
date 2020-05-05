@@ -1,1 +1,1 @@
-# for_ios_interview
+# Test project for iOS candidates
