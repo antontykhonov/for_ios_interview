@@ -8,10 +8,15 @@
 
 import Foundation
 
-struct Street {
+@objcMembers class Street: NSObject {
+    let name: String
     var addreses = [Address]()
     
-    mutating func addAddress(_ address: Address) {
+    init(name: String) {
+        self.name = name
+    }
+
+    func addAddress(_ address: Address) {
         addreses.append(address)
     }
 }

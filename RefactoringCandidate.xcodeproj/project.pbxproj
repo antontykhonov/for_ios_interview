@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		EE000B9624855A4700657894 /* Street.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE000B9524855A4700657894 /* Street.swift */; };
 		EE000B9824855A9800657894 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE000B9724855A9800657894 /* Address.swift */; };
+		E27B888F24841E8F00AFC751 /* CityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E27B888E24841E8E00AFC751 /* CityModel.m */; };
+		E27B889224841FD400AFC751 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E27B889124841FD400AFC751 /* DataManager.m */; };
+		E27B88952484216C00AFC751 /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27B88942484216C00AFC751 /* CityCell.swift */; };
 		EEF11C8A2461ABB600DA7432 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF11C892461ABB600DA7432 /* AppDelegate.m */; };
 		EEF11C8D2461ABB600DA7432 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF11C8C2461ABB600DA7432 /* SceneDelegate.m */; };
 		EEF11C902461ABB600DA7432 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF11C8F2461ABB600DA7432 /* FirstViewController.m */; };
@@ -42,6 +45,11 @@
 		EE000B9424855A4600657894 /* RefactoringCandidate-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RefactoringCandidate-Bridging-Header.h"; sourceTree = "<group>"; };
 		EE000B9524855A4700657894 /* Street.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Street.swift; sourceTree = "<group>"; };
 		EE000B9724855A9800657894 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		E27B888D24841E8E00AFC751 /* CityModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CityModel.h; sourceTree = "<group>"; };
+		E27B888E24841E8E00AFC751 /* CityModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CityModel.m; sourceTree = "<group>"; };
+		E27B889024841FD400AFC751 /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		E27B889124841FD400AFC751 /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		E27B88942484216C00AFC751 /* CityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
 		EEF11C852461ABB600DA7432 /* RefactoringCandidate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RefactoringCandidate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEF11C882461ABB600DA7432 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EEF11C892461ABB600DA7432 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -116,10 +124,15 @@
 				EEF11C892461ABB600DA7432 /* AppDelegate.m */,
 				EEF11C8B2461ABB600DA7432 /* SceneDelegate.h */,
 				EEF11C8C2461ABB600DA7432 /* SceneDelegate.m */,
+				E27B888D24841E8E00AFC751 /* CityModel.h */,
+				E27B888E24841E8E00AFC751 /* CityModel.m */,
 				EEF11C8E2461ABB600DA7432 /* FirstViewController.h */,
 				EEF11C8F2461ABB600DA7432 /* FirstViewController.m */,
+				E27B88942484216C00AFC751 /* CityCell.swift */,
 				EEF11C912461ABB600DA7432 /* SecondViewController.h */,
 				EEF11C922461ABB600DA7432 /* SecondViewController.m */,
+				E27B889024841FD400AFC751 /* DataManager.h */,
+				E27B889124841FD400AFC751 /* DataManager.m */,
 				EEF11C942461ABB600DA7432 /* Main.storyboard */,
 				EEF11C972461ABB800DA7432 /* Assets.xcassets */,
 				EEF11C992461ABB800DA7432 /* LaunchScreen.storyboard */,
@@ -284,10 +297,13 @@
 				EE000B9624855A4700657894 /* Street.swift in Sources */,
 				EEF11C9E2461ABB800DA7432 /* main.m in Sources */,
 				EEF11C932461ABB600DA7432 /* SecondViewController.m in Sources */,
+				E27B889224841FD400AFC751 /* DataManager.m in Sources */,
 				EEF11C8A2461ABB600DA7432 /* AppDelegate.m in Sources */,
 				EEF11C902461ABB600DA7432 /* FirstViewController.m in Sources */,
+				E27B888F24841E8F00AFC751 /* CityModel.m in Sources */,
 				EEF11C8D2461ABB600DA7432 /* SceneDelegate.m in Sources */,
 				EE000B9824855A9800657894 /* Address.swift in Sources */,
+				E27B88952484216C00AFC751 /* CityCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
