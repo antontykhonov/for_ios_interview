@@ -8,12 +8,13 @@
 
 import Foundation
 
-struct Address {
+@objc class Address: NSObject {
     let number: Int
     let street: Street
     
-    init(street: Street, number: Int) {
+    @objc init(street: Street, number: Int) {
         self.street = street
         self.number = number
+        super.init()
     }
 }

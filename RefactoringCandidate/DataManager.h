@@ -11,7 +11,9 @@
 
 @interface DataManager : NSObject
 
+@property(nonatomic, assign)UInt32 refreshesCount;
+
 +(DataManager *)shared;
--(NSArray<CityModel*>*)cities;
+-(void)fetchCities:(void(^)(NSArray<CityModel*>*))fetchHandler;
 
 @end

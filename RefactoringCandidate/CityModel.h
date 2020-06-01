@@ -8,10 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+@class Street;
+
 @interface CityModel : NSObject
 
 @property (nonatomic, strong) NSString *name;
-@property (nonatomic, strong) NSString *cityDescription;
 @property (nonatomic, strong) NSString *urlString;
+@property (nonatomic, strong) Street *mainStreet;
+
+-(NSString *)getCityDescription;
 
 @end

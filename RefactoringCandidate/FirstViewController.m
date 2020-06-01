@@ -15,12 +15,24 @@
 
 @end
 
+static void const *refreshesCountContext;
+
 @implementation FirstViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.cities = [[DataManager shared] cities];
-    [self.tableview reloadData];
+    [[DataManager shared]addObserver:self
+                          forKeyPath:@"refreshesCount" options:NSKeyValueObservingOptionInitial|NSKeyValueObservingOptionNew context:&refreshesCountContext];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [[DataManager shared] fetchCities:^(NSArray<CityModel *> * cities) {
+        // Just want to be sure that UI is updating in Main queue.
+        dispatch_sync(dispatch_get_main_queue(), ^{
+            self.cities = cities;
+            [self.tableview reloadData];
+        });
+    }];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -42,6 +54,12 @@
 
 - (void)buttonClicked {
  
+}
+
+#pragma mark - KVO
+
+-(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context {
+    self.title = [NSString stringWithFormat:@"%u refresh attempts", (unsigned int)[DataManager shared].refreshesCount];
 }
 
 @end

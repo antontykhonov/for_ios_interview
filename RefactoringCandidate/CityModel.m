@@ -7,7 +7,15 @@
 //
 
 #import "CityModel.h"
+#import "RefactoringCandidate-Swift.h"
 
 @implementation CityModel
+
+-(NSString *)getCityDescription {
+    if (self.mainStreet != nil) {
+        return [NSString stringWithFormat:@"This is %@ and it's main street is %@", self.name, self.mainStreet.name];
+    }
+    return nil;
+}
 
 @end
