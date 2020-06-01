@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CityModel.h"
 
-@interface FirstViewController : UIViewController
+@interface FirstViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
+@property(nonatomic, strong) IBOutlet UITableView *tableview;
 
 @end
 
